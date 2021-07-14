@@ -1,0 +1,8 @@
+export { default as Label } from './Label.vue'
+export { default as Input } from './Input.vue'
+export { default as Upload } from './Upload.vue'
+export { default as Textarea } from './Textarea.vue'
+export { default as Radio } from './Radio.vue'
+export { default as Message } from './Message.vue'
+export { default as Search } from './Search.vue'
+export { default as Dropdown } from './Dropdown.vue'

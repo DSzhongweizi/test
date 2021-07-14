@@ -1,0 +1,12 @@
+@mixin upload($w,$h,$bc) {
+  width: $w !important;
+  height: $h !important;
+  background-color: $bc !important;
+}
+
+.upload-cover .el-upload-dragger {
+  @include upload(230px, 230px, #F8F8F8)
+}
+.upload-work .el-upload-dragger{
+  @include upload(900px, 200px, #F8F8F8)
+}

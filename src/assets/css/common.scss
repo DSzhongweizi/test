@@ -1,0 +1,35 @@
+@import "./mixin.scss";
+.absolute-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+}
+.fixed-center{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+}
+.seleted {
+  background-color: #f0d4d6;
+  border-color: #dea2a6 !important;
+  color: #b6333d;
+}
+.must-symbol {
+  color: red;
+  font-size: 16px;
+}
+.hidden{
+  visibility: hidden;
+}
+
+.cards-box {
+  @include grid(1, 5, center);
+}
+
+$pl:#F7E9EA;  //浅粉
+$rd:#B22631;  //深红
+$g9:#999; 

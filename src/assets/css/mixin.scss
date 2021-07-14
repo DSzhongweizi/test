@@ -1,0 +1,103 @@
+
+@mixin option($w:130px,$h:60px,$br:10px) {
+  font-size: 20px;
+  width: $w;
+  height: $h;
+  line-height: $h;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: $br;
+}
+
+@mixin flex($fd:row,$fw:nowrap,$jc:stretch,$ai:stretch) {
+  display: flex;
+  flex-flow: $fd $fw;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin grid($row:1,$col:1,$ji:stretch,$ai:stretch,$rowg:20px,$colg:20px) {
+  display: grid;
+  grid-template-rows:repeat($row, 1fr);
+  grid-template-columns: repeat($col, 1fr);
+  grid-row-gap: $rowg;
+  grid-column-gap: $colg;
+  justify-items: $ji;
+  align-items: $ai;
+
+}
+@mixin mask($o:0.2,$z:999){
+  background-color: #000;
+  opacity: $o;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z;
+}
+
+@mixin border($br:5px,$c:#ccc) {
+  border: 1px solid $c;
+  border-radius: $br;
+} 
+
+@mixin justify-title($fs:20px,$w:4em,$h:50px,$fw:500,$c:#000,$p_h:0,$p_v:0) {
+  display: inline-block;
+  width: $w;
+  height: $h;
+  line-height: $h;
+  font-size: $fs;
+  font-weight: $fw;
+  color: $c;
+  text-align: justify;
+  text-align-last: justify;
+  white-space: nowrap;
+  padding: $p_v $p_h;
+}
+@mixin center($p:absolute,$z:10) {
+  position: $p;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: $z;
+}
+
+@mixin input($fs:20px){
+  font-size: $fs;
+  box-sizing: border-box;
+  @include border;
+  &:focus {
+    outline-color: #ff0000;
+  }
+}
+
+@mixin bt($w:130px,$h:50px,$fs:18px) {
+  font-size: $fs;
+  color: #fff;
+  background-color: #b22631;
+  width: $w;
+  height: $h;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px;
+  border: none;
+  outline: none;
+}
+
+@mixin pays-box($bw:800px,$iw:130px,$fs:24px,$jc:space-evenly,$mt:20px,$mr:0) {
+  @include flex($jc: $jc);
+  width: $bw;
+  .item {
+    @include flex($fd: column, $ai: center);
+    margin-right: $mr;
+    img {
+      width: $iw;
+      height: $iw;
+    }
+    span {
+      font-size: $fs;
+      margin-top: $mt;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+export { default as opera } from './opera.png'
+export { default as opera1 } from './opera1.png'
+export { default as kungfu } from './kungfu.jpg'
+export { default as kungfu1 } from './kungfu1.jpg'
+export { default as folk } from './folk.jpg'
+export { default as folk1 } from './folk1.jpg'
