@@ -22,6 +22,14 @@
 import bg1 from "@/assets/img/home-bg1.jpg";
 import bg2 from "@/assets/img/home-bg2.jpg";
 import bg3 from "@/assets/img/home-bg3.jpg";
+import {
+  computed,
+  onMounted,
+  reactive,
+  ref,
+  watch,
+  watchEffect,
+} from "@vue/runtime-core";
 const bgs = [
   {
     src: bg1,
@@ -50,6 +58,21 @@ const bgs = [
     ],
   },
 ];
+
+const init = () => {
+  const w = window.innerWidth / 30;
+  document.querySelector(".introduce").style.fontSize = w * 1.3 + "px";
+  document.querySelectorAll(".title").forEach((cur) => {
+    cur.style.fontSize = w + "px";
+    cur.style.top = w + "px";
+    cur.style.left = w * 3 + "px";
+  });
+  document.querySelectorAll(".desc").forEach((cur) => {
+    cur.style.fontSize = w / 1.5 + "px";
+  });
+};
+onMounted(() => init());
+window.onresize = () => init();
 </script>
 <style lang='scss' scoped>
 .bg {
@@ -73,22 +96,17 @@ const bgs = [
     filter: brightness(0.8);
   }
   .introduce {
-    font-size: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .title {
     position: absolute;
-    left: 120px;
-    top: 90px;
     color: #fff;
-    font-size: 60px;
   }
   .desc {
     width: 80%;
     padding: calc(50vw - 40%) 0;
     color: #fff;
-    font-size: 30px;
     opacity: 0;
     transition: opacity 1.5s;
     &:hover {
