@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
   background: url("./assets/img/shade.jpg") repeat;
-  // height: 100%;
   font-size: 16px;
 }
 img {

@@ -61,7 +61,7 @@ a {
 }
 .footer {
   background-color: #000;
-  padding: 30px 300px;
+  padding: 30px 0;
   .tabs {
     display: flex;
     justify-content: space-evenly;

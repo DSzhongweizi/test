@@ -54,7 +54,7 @@ const bgs = [
 <style lang='scss' scoped>
 .bg {
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   @media (orientation: landscape) {
     #home-bg {
@@ -85,8 +85,8 @@ const bgs = [
     font-size: 60px;
   }
   .desc {
-    width: 1360px;
-    padding: calc(50vw - 680px);
+    width: 80%;
+    padding: calc(50vw - 40%) 0;
     color: #fff;
     font-size: 30px;
     opacity: 0;
