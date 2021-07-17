@@ -56,6 +56,7 @@ let collectState = ref(collect);
   @include flex($fd: column);
   img {
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
   }
   .bottom {
     box-sizing: border-box;

@@ -29,6 +29,7 @@ const { img, issuer, name, intro } = props.card;
   @include flex($fd: column);
   img {
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
   }
   .bottom {
     padding: 20px;
