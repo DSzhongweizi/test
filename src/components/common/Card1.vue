@@ -21,7 +21,7 @@ const { img, issuer, name, intro } = props.card;
 <style lang='scss' scoped>
 .card {
   max-width: 270px;
-  // height: 400px;
+  max-height: 400px;
   border-radius: 10px;
   border: 1px solid #dcdcdc;
   cursor: pointer;

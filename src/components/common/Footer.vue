@@ -61,38 +61,38 @@ a {
 }
 .footer {
   background-color: #000;
-  padding: 30px 0;
+  padding: 4vw 0;
   .tabs {
     display: flex;
     justify-content: space-evenly;
-    font-size: 22px;
+    font-size: 1.5vw;
     white-space: nowrap;
   }
   .icons {
     @include flex($jc: center);
     text-align: center;
-    font-size: 64px;
+    font-size: 3vw;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 2vw;
     a {
       display: inline-block;
-      margin: 0 16px;
+      margin: 0 2vw;
     }
     .icon-wexin {
       display: inline-block;
       position: relative;
       img {
         position: absolute;
-        width: 200px;
-        height: 200px;
-        top: -200px;
-        left: -64px;
+        width: 15vw;
+        height: 15vw;
+        top: -15vw;
+        left: -6vw;
       }
     }
-    .iconfont {
-      font-size: 55px;
-      margin: 20px 20px 0;
-    }
+    // .iconfont {
+    //   font-size: 5vw;
+    //   margin: 3vw 3vw 0;
+    // }
   }
 }
 </style>

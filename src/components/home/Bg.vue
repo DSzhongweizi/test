@@ -59,20 +59,20 @@ const bgs = [
   },
 ];
 
-const init = () => {
-  const w = window.innerWidth / 30;
-  document.querySelector(".introduce").style.fontSize = w * 1.3 + "px";
-  document.querySelectorAll(".title").forEach((cur) => {
-    cur.style.fontSize = w + "px";
-    cur.style.top = w + "px";
-    cur.style.left = w * 3 + "px";
-  });
-  document.querySelectorAll(".desc").forEach((cur) => {
-    cur.style.fontSize = w / 1.5 + "px";
-  });
-};
-onMounted(() => init());
-window.onresize = () => init();
+// const init = () => {
+//   const w = window.innerWidth / 30;
+//   document.querySelector(".introduce").style.fontSize = w * 1.3 + "px";
+//   document.querySelectorAll(".title").forEach((cur) => {
+//     cur.style.fontSize = w + "px";
+//     cur.style.top = w + "px";
+//     cur.style.left = w * 3 + "px";
+//   });
+//   document.querySelectorAll(".desc").forEach((cur) => {
+//     cur.style.fontSize = w / 1.5 + "px";
+//   });
+// };
+// onMounted(() => init());
+// window.onresize = () => init();
 </script>
 <style lang='scss' scoped>
 .bg {
@@ -98,10 +98,14 @@ window.onresize = () => init();
   .introduce {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
   }
   .title {
     position: absolute;
     color: #fff;
+    top: 2vw;
+    left: 6vw;
+    font-size: 3vw;
   }
   .desc {
     width: 80%;
@@ -109,6 +113,7 @@ window.onresize = () => init();
     color: #fff;
     opacity: 0;
     transition: opacity 1.5s;
+    font-size: 1.5vw;
     &:hover {
       opacity: 1;
     }
