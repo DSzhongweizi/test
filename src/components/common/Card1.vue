@@ -28,7 +28,7 @@ const { img, issuer, name, intro } = props.card;
   @include flex($fd: column);
   img {
     border-radius: 10px 10px 0 0;
-    max-height: 400px;
+    max-height: 350px;
   }
   .bottom {
     padding: 20px;
