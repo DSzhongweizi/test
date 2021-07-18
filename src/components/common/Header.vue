@@ -100,16 +100,18 @@ onMounted(() => {
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 300px;
-  height: 80px;
+  height: 5vw;
   background-color: #f8f8f8;
   opacity: 0.8;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @media screen and (min-width: 1800px) {
+    padding: 0 300px;
+  }
   .logo {
-    width: 112px;
-    height: 56px;
+    width: 8vw;
+    height: 4vw;
     cursor: pointer;
     margin: 0 20px;
   }
@@ -117,9 +119,9 @@ onMounted(() => {
     position: relative;
     .router {
       color: #000;
-      font-size: 20px;
-      padding: 10px 20px;
-      border-radius: 20px;
+      font-size: 1vw;
+      padding: 0.5vw 1vw;
+      border-radius: 1vw;
       font-family: "宋体";
       font-weight: bolder;
       white-space: nowrap;
@@ -140,7 +142,7 @@ onMounted(() => {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 18px;
+        font-size: 0.8vw;
         font-weight: bold;
         background-color: #fff;
         border-radius: 5px;

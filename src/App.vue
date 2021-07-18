@@ -22,6 +22,6 @@ a {
   text-decoration: none;
 }
 .header-container {
-  padding-bottom: 80px;
+  padding-bottom: 5vw;
 }
 </style>
